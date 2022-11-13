@@ -1,18 +1,18 @@
-import { transparent } from "daisyui/src/colors";
+// import { transparent } from "daisyui/src/colors";
 import React from "react";
 import treatment from "../../../../assets/images/treatment.png";
 
 const About = () => {
   return (
-    <div className="card  card-side bg-base-100 my-24">
+    <div className="grid grid-cols lg:grid-cols-2  bg-base-100 my-24">
       <figure>
-        <img className="w-6/12" src={treatment} alt="Movie" />
+        <img className="w-1/2 mx-60" src={treatment} alt="" />
       </figure>
-      <div className="card-body w-1/2">
-        <h2 className="card-title text-5xl font-bold py-8">
+      <div className="font-bold w-9/12 py-12">
+        <h2 className=" text-5xl font-bold">
           Exceptional Dental <br /> Care, on Your Terms
         </h2>
-        <p>
+        <p className=" py-6">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsumis that it has a more-or-less normal distribution of
