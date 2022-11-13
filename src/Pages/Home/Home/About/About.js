@@ -1,6 +1,7 @@
 // import { transparent } from "daisyui/src/colors";
 import React from "react";
 import treatment from "../../../../assets/images/treatment.png";
+import PrimaryButton from "../../../../Components/PrimaryButton/PrimaryButton";
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
           look like readable English. Many desktop publishing packages and web
           page
         </p>
-        <button className="btn btn-primary w-3/12	">GET STARTED</button>
+        <PrimaryButton>Get STARTED</PrimaryButton>
       </div>
     </div>
   );

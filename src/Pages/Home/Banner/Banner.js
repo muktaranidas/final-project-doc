@@ -1,9 +1,11 @@
 import React from "react";
 import chair from "../../../assets/images/chair.png";
+import backgroundchair from "../../../assets/images/bg.png";
+import PrimaryButton from "../../../Components/PrimaryButton/PrimaryButton";
 
 const Banner = () => {
   return (
-    <div className="hero">
+    <div className="hero" style={{ background: `url(${backgroundchair})` }}>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={chair} className=" rounded-lg lg:w-1/2  shadow-2xl" alt="" />
         <div>
@@ -13,9 +15,7 @@ const Banner = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary bg-gradient-to-r from-primary to-secondary">
-            Get Started
-          </button>
+          <PrimaryButton>Get STARTED</PrimaryButton>
         </div>
       </div>
     </div>
