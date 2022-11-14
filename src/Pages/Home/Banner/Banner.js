@@ -5,7 +5,10 @@ import PrimaryButton from "../../../Components/PrimaryButton/PrimaryButton";
 
 const Banner = () => {
   return (
-    <div className="hero" style={{ background: `url(${backgroundchair})` }}>
+    <div
+      className="hero"
+      style={{ background: `url(${backgroundchair})`, backgroundSize: "cover" }}
+    >
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={chair} className=" rounded-lg lg:w-1/2  shadow-2xl" alt="" />
         <div>
