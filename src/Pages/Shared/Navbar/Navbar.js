@@ -17,17 +17,18 @@ const Navbar = () => {
       <li>
         <Link to="/home">Home</Link>
       </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/appointment">Appointment</Link>
-      </li>
-      <li>
-        <Link to="/contact-us">Contact Us</Link>
-      </li>
+
       {user?.uid ? (
         <>
+          <li>
+            <Link to="/submit-proposal">SubmitProposal</Link>
+          </li>
+          <li>
+            <Link to="/view-proposal">ViewProposal</Link>
+          </li>
+          <li>
+            <Link to="/view-report">ViewReport</Link>
+          </li>
           <li>
             <Link to="dashboard">Dashboard</Link>
           </li>
@@ -36,15 +37,20 @@ const Navbar = () => {
           </li>
         </>
       ) : (
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
+        <>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/signup">SignUp</Link>
+          </li>
+        </>
       )}
     </React.Fragment>
   );
 
   return (
-    <div className="navbar bg-base-100 flex justify-between">
+    <div className="navbar bg-base-100  flex justify-between">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -70,8 +76,8 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Doctor's Portal
+        <Link to="/" className="btn btn-ghost  normal-case text-2xl font-bold">
+          Smart Assistant For Supervisor
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
+  apiKey: "AIzaSyCZTf9U922aWlp5c236wZg4eR8R5WbMVDc",
+  authDomain: "smart-assistant-for-supervisor.firebaseapp.com",
+  projectId: "smart-assistant-for-supervisor",
+  storageBucket: "smart-assistant-for-supervisor.appspot.com",
+  messagingSenderId: "884553590438",
+  appId: "1:884553590438:web:bceff0ff498358a7133667",
 };
 
 // Initialize Firebase
